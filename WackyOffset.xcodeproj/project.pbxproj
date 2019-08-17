@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ED4E556C2307D83A0050AF63 /* WackyOffset WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = ED4E556B2307D83A0050AF63 /* WackyOffset WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED4E55722307D83A0050AF63 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED4E55702307D83A0050AF63 /* Interface.storyboard */; };
+		ED4E55742307D83D0050AF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E55732307D83D0050AF63 /* Assets.xcassets */; };
+		ED4E557B2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = ED4E557A2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		ED4E55802307D83E0050AF63 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E557F2307D83E0050AF63 /* ContentView.swift */; };
+		ED4E55822307D83E0050AF63 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E55812307D83E0050AF63 /* HostingController.swift */; };
+		ED4E55842307D83E0050AF63 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E55832307D83E0050AF63 /* ExtensionDelegate.swift */; };
+		ED4E55862307D83E0050AF63 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E55852307D83E0050AF63 /* NotificationController.swift */; };
+		ED4E55882307D83E0050AF63 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED4E55872307D83E0050AF63 /* NotificationView.swift */; };
+		ED4E558A2307D83F0050AF63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E55892307D83F0050AF63 /* Assets.xcassets */; };
+		ED4E558D2307D83F0050AF63 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED4E558C2307D83F0050AF63 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ED4E556D2307D83A0050AF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4E55612307D83A0050AF63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4E556A2307D83A0050AF63;
+			remoteInfo = "WackyOffset WatchKit App";
+		};
+		ED4E557C2307D83E0050AF63 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ED4E55612307D83A0050AF63 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ED4E55792307D83E0050AF63;
+			remoteInfo = "WackyOffset WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ED4E55952307D83F0050AF63 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				ED4E557B2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4E55992307D83F0050AF63 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				ED4E556C2307D83A0050AF63 /* WackyOffset WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		ED4E55672307D83A0050AF63 /* WackyOffset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WackyOffset.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4E556B2307D83A0050AF63 /* WackyOffset WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WackyOffset WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4E55712307D83A0050AF63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		ED4E55732307D83D0050AF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4E55752307D83D0050AF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4E557A2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WackyOffset WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ED4E557F2307D83E0050AF63 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		ED4E55812307D83E0050AF63 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		ED4E55832307D83E0050AF63 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		ED4E55852307D83E0050AF63 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		ED4E55872307D83E0050AF63 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		ED4E55892307D83F0050AF63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ED4E558C2307D83F0050AF63 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		ED4E558E2307D83F0050AF63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED4E558F2307D83F0050AF63 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ED4E55772307D83E0050AF63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ED4E55602307D83A0050AF63 = {
+			isa = PBXGroup;
+			children = (
+				ED4E556F2307D83A0050AF63 /* WackyOffset WatchKit App */,
+				ED4E557E2307D83E0050AF63 /* WackyOffset WatchKit Extension */,
+				ED4E55682307D83A0050AF63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ED4E55682307D83A0050AF63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E55672307D83A0050AF63 /* WackyOffset.app */,
+				ED4E556B2307D83A0050AF63 /* WackyOffset WatchKit App.app */,
+				ED4E557A2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ED4E556F2307D83A0050AF63 /* WackyOffset WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E55702307D83A0050AF63 /* Interface.storyboard */,
+				ED4E55732307D83D0050AF63 /* Assets.xcassets */,
+				ED4E55752307D83D0050AF63 /* Info.plist */,
+			);
+			path = "WackyOffset WatchKit App";
+			sourceTree = "<group>";
+		};
+		ED4E557E2307D83E0050AF63 /* WackyOffset WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E557F2307D83E0050AF63 /* ContentView.swift */,
+				ED4E55812307D83E0050AF63 /* HostingController.swift */,
+				ED4E55832307D83E0050AF63 /* ExtensionDelegate.swift */,
+				ED4E55852307D83E0050AF63 /* NotificationController.swift */,
+				ED4E55872307D83E0050AF63 /* NotificationView.swift */,
+				ED4E55892307D83F0050AF63 /* Assets.xcassets */,
+				ED4E558E2307D83F0050AF63 /* Info.plist */,
+				ED4E558F2307D83F0050AF63 /* PushNotificationPayload.apns */,
+				ED4E558B2307D83F0050AF63 /* Preview Content */,
+			);
+			path = "WackyOffset WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		ED4E558B2307D83F0050AF63 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				ED4E558C2307D83F0050AF63 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ED4E55662307D83A0050AF63 /* WackyOffset */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4E559A2307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset" */;
+			buildPhases = (
+				ED4E55652307D83A0050AF63 /* Resources */,
+				ED4E55992307D83F0050AF63 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4E556E2307D83A0050AF63 /* PBXTargetDependency */,
+			);
+			name = WackyOffset;
+			productName = WackyOffset;
+			productReference = ED4E55672307D83A0050AF63 /* WackyOffset.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		ED4E556A2307D83A0050AF63 /* WackyOffset WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4E55962307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset WatchKit App" */;
+			buildPhases = (
+				ED4E55692307D83A0050AF63 /* Resources */,
+				ED4E55952307D83F0050AF63 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ED4E557D2307D83E0050AF63 /* PBXTargetDependency */,
+			);
+			name = "WackyOffset WatchKit App";
+			productName = "WackyOffset WatchKit App";
+			productReference = ED4E556B2307D83A0050AF63 /* WackyOffset WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		ED4E55792307D83E0050AF63 /* WackyOffset WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED4E55922307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset WatchKit Extension" */;
+			buildPhases = (
+				ED4E55762307D83E0050AF63 /* Sources */,
+				ED4E55772307D83E0050AF63 /* Frameworks */,
+				ED4E55782307D83E0050AF63 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WackyOffset WatchKit Extension";
+			productName = "WackyOffset WatchKit Extension";
+			productReference = ED4E557A2307D83E0050AF63 /* WackyOffset WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ED4E55612307D83A0050AF63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Will Bishop";
+				TargetAttributes = {
+					ED4E55662307D83A0050AF63 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					ED4E556A2307D83A0050AF63 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					ED4E55792307D83E0050AF63 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = ED4E55642307D83A0050AF63 /* Build configuration list for PBXProject "WackyOffset" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ED4E55602307D83A0050AF63;
+			productRefGroup = ED4E55682307D83A0050AF63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ED4E55662307D83A0050AF63 /* WackyOffset */,
+				ED4E556A2307D83A0050AF63 /* WackyOffset WatchKit App */,
+				ED4E55792307D83E0050AF63 /* WackyOffset WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ED4E55652307D83A0050AF63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4E55692307D83A0050AF63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4E55742307D83D0050AF63 /* Assets.xcassets in Resources */,
+				ED4E55722307D83A0050AF63 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED4E55782307D83E0050AF63 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4E558D2307D83F0050AF63 /* Preview Assets.xcassets in Resources */,
+				ED4E558A2307D83F0050AF63 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ED4E55762307D83E0050AF63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED4E55822307D83E0050AF63 /* HostingController.swift in Sources */,
+				ED4E55802307D83E0050AF63 /* ContentView.swift in Sources */,
+				ED4E55862307D83E0050AF63 /* NotificationController.swift in Sources */,
+				ED4E55842307D83E0050AF63 /* ExtensionDelegate.swift in Sources */,
+				ED4E55882307D83E0050AF63 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ED4E556E2307D83A0050AF63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4E556A2307D83A0050AF63 /* WackyOffset WatchKit App */;
+			targetProxy = ED4E556D2307D83A0050AF63 /* PBXContainerItemProxy */;
+		};
+		ED4E557D2307D83E0050AF63 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ED4E55792307D83E0050AF63 /* WackyOffset WatchKit Extension */;
+			targetProxy = ED4E557C2307D83E0050AF63 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ED4E55702307D83A0050AF63 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ED4E55712307D83A0050AF63 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ED4E55902307D83F0050AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		ED4E55912307D83F0050AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ED4E55932307D83F0050AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WackyOffset WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WackyOffset WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		ED4E55942307D83F0050AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WackyOffset WatchKit Extension\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WackyOffset WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		ED4E55972307D83F0050AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = WackyOffset_WatchKit_Extension;
+				INFOPLIST_FILE = "WackyOffset WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		ED4E55982307D83F0050AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				IBSC_MODULE = WackyOffset_WatchKit_Extension;
+				INFOPLIST_FILE = "WackyOffset WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		ED4E559B2307D83F0050AF63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ED4E559C2307D83F0050AF63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.willbishop.WackyOffset;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ED4E55642307D83A0050AF63 /* Build configuration list for PBXProject "WackyOffset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4E55902307D83F0050AF63 /* Debug */,
+				ED4E55912307D83F0050AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4E55922307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4E55932307D83F0050AF63 /* Debug */,
+				ED4E55942307D83F0050AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4E55962307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4E55972307D83F0050AF63 /* Debug */,
+				ED4E55982307D83F0050AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED4E559A2307D83F0050AF63 /* Build configuration list for PBXNativeTarget "WackyOffset" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED4E559B2307D83F0050AF63 /* Debug */,
+				ED4E559C2307D83F0050AF63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ED4E55612307D83A0050AF63 /* Project object */;
+}
